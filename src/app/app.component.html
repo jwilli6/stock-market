@@ -1,10 +1,5 @@
-<div style="text-align:center">  
-  <h1 class="content">  
-    <span>
-      Welcome to <br>
-      {{ title }}! 
-    </span>  
-    
-  </h1>  
-  <app-stock-item></app-stock-item>
-</div>
+<h1>
+  {{title}}
+</h1>
+<app-stock-item [stock]="stock"
+                (toggleFavorite)="onToggleFavorite($event)"></app-stock-item>
